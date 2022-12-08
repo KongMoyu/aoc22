@@ -6,7 +6,7 @@ I feel very lucky participating in this event and learn with the pros and solve 
 
 Let's start with AOC22DAY1_P1&P2 shall we?
 
->>> Lesson Learnt
+> Lesson Learnt
 
 Day 1:
 
