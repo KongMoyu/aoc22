@@ -6,4 +6,10 @@ I feel very lucky participating in this event and learn with the pros and solve 
 
 Let's start with AOC22DAY1_P1&P2 shall we?
 
->>>
+>>> Lesson Learnt
+
+Day 1:
+
+1.Changing my VScode Code Runner's '.json' terminal to "cpp": "cd $dir && g++  -std=c++11 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+
+2.
