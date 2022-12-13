@@ -12,4 +12,4 @@ Let's start with AOC22DAY1_P1&P2 shall we?
 
 1.Changing my VScode Code Runner's '.json' terminal to "cpp": "cd $dir && g++  -std=c++11 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
 
-2.Learn #include <> array.
+2.Learn #include <vector> array.
