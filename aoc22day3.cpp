@@ -4,6 +4,7 @@
 #include <fstream>
 #include <iostream>
 #include <vector>
+#include <string>
 using namespace std;
 
 int get_priority(char item) {
