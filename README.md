@@ -137,3 +137,4 @@ Let's start solving the AOC2022 shall we?
 1.
 
 
+                                                                    - END -
