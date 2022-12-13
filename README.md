@@ -17,4 +17,14 @@ Let's start with AOC22DAY1_P1&P2 shall we?
   
 > Day 2:
 
+1.Learn #include <>
+
+
+> Day 3:
+
+1.Learn #include <>
+
+
+> Day 4:
+
 1.
