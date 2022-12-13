@@ -4,7 +4,9 @@ This is my file for the Advent Of Code {year => 2022}
 
 I feel very lucky participating in this event and learn with the pros and solve challenging coding questions.
 
-Let's start with AOC22DAY1_P1&P2 shall we?
+I saved most of my files on VScode and Atom.
+
+Let's start solving the AOC2022 shall we?
 
 ###Lesson Learnt###
 
@@ -28,3 +30,110 @@ Let's start with AOC22DAY1_P1&P2 shall we?
 > Day 4:
 
 1.
+
+
+> Day 5;
+
+1.
+
+
+> Day 6;
+
+1.
+
+
+> Day 7;
+
+1.
+
+
+> Day 8;
+
+1.
+
+
+> Day 9;
+
+1.
+
+
+> Day 10;
+
+1.
+
+
+> Day 11;
+
+1.
+
+
+> Day 12;
+
+1.
+
+
+> Day 13;
+
+1.
+
+
+> Day 14;
+
+1.
+
+
+> Day 15;
+
+1.
+
+
+> Day 16;
+
+1.
+
+
+> Day 17;
+
+1.
+
+
+> Day 18;
+
+1.
+
+
+> Day 19;
+
+1.
+
+
+> Day 20;
+
+1.
+
+
+> Day 21;
+
+1.
+
+
+> Day 22;
+
+1.
+
+
+> Day 23;
+
+1.
+
+
+> Day 24;
+
+1.
+
+
+> Day 25;
+
+1.
+
+
