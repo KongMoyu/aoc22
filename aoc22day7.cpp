@@ -5,12 +5,13 @@
 #include <sstream>
 #include <string>
 #include <vector>
+using namespace std;
 
 struct File {
-    std::string name;
+    string name;
     int size;
 
-    File(std::string name_, int size_) {
+    File(string name_, int size_) {
         name = name_;
         size = size_;
     }
@@ -19,11 +20,11 @@ struct File {
 struct Directory {
     Directory *parent;
 
-    std::string name;
-    std::vector<Directory *> dirs = {};
-    std::vector<File> files = {};
+    string name;
+    vector<Directory *> dirs = {};
+    vector<File> files = {};
 
-    Directory(Directory *parent_, std::string name_) {
+    Directory(Directory *parent_, string name_) {
         parent = parent_;
         name = name_;
     }
@@ -84,16 +85,16 @@ void delete_dir(Directory *dir) {
 }
 
 int main() {
-    std::ifstream file("aoc22day7_data.txt");
+    ifstream file("aoc22day7_data.txt");
 
     Directory *root = new Directory(NULL, "/");
     Directory *current_dir = root;
 
-    for (std::string line; std::getline(file, line);) {
-        std::vector<std::string> tokens;
+    for (string line; getline(file, line);) {
+        vector<string> tokens;
 
-        std::istringstream stream(line);
-        for (std::string word; stream >> word; tokens.push_back(word)) {}
+        istringstream stream(line);
+        for (string word; stream >> word; tokens.push_back(word)) {}
 
         if (tokens[0] == "$" && tokens[1] == "cd") {
             if (tokens[2] == "..") {
@@ -111,19 +112,19 @@ int main() {
         } else {
             try {
                 current_dir->files.push_back(
-                    File(tokens[1], std::stoi(tokens[0]))
+                    File(tokens[1], stoi(tokens[0]))
                 );
-            } catch (std::invalid_argument) {
+            } catch (invalid_argument) {
                 continue;
             }
         }
     }
 
-    std::cout << "[PART 1] Total size of small directories: "
+    cout << "[PART 1] Total size of small directories: "
               << root->get_small_dirs_size()
               << "\n";
 
-    std::cout << "[PART 2] Size of smallest sufficient directory: "
+    cout << "[PART 2] Size of smallest sufficient directory: "
               << root->get_smallest_sufficient_dir_size(
                      30000000 - (70000000 - root->get_size())
                  )
