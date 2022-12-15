@@ -13,9 +13,34 @@ Let's start solving the AOC2022 shall we?
 > Day 1:
 
 1.Changing my VScode Code Runner's '.json' terminal to "cpp": "cd $dir && g++  -std=c++11 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+  - for #include <vector>
 
-2.Learn #include <vector> array: !
-
+2.Learn #include <vector> array : 
+  - vector <string> v ;
+  - v.push_back("");
+  - v.pop_back();
+  - v.insert(v. begin() + 1, "");
+  - v.erase("");
+  - i < v.size();
+  - for (int num : v ){} 
+  
+3.for (string line; getline(file, line);){
+    if (line.empty()){
+      ...
+    }
+    else{
+      ...
+    }
+  }
+  
+4.int key;
+  cout << "Enter ...: " << endl;
+  cin >> key;
+  
+5.The basic_string::c_str() is a builtin function in C++ which returns a pointer to an array that contains a null-terminated sequence of characters representing the current value of the basic_string object.
+  
+6.#include <cstdlib> :The C++ <cstdlib> header file declares a set of general-purpose functions such as: atof() to convert string to double. It also contains a few mathematical functions. For example, abs() to find the absolute value of a number.
+  - current += std::atoi(line.c_str()); // atoi is a predefined function from the cstdlib header file used to convert a string value to an integer value.
   
 > Day 2:
 
@@ -24,7 +49,7 @@ Let's start solving the AOC2022 shall we?
 
 > Day 3:
 
-1.Learn #include <>
+1.
 
 
 > Day 4:
