@@ -13,7 +13,7 @@ Let's start solving the AOC2022 shall we?
 > Day 1:
 
 1.Changing my VScode Code Runner's '.json' terminal to "cpp": "cd $dir && g++  -std=c++11 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
-  - for #include <vector>
+  - #include <vector>
 
 2.Learn #include <vector> array : 
   - vector <string> v ;
@@ -41,7 +41,9 @@ Let's start solving the AOC2022 shall we?
   
 6.#include <cstdlib> :The C++ <cstdlib> header file declares a set of general-purpose functions such as: atof() to convert string to double. It also contains a few mathematical functions. For example, abs() to find the absolute value of a number.
   - current += std::atoi(line.c_str()); // atoi is a predefined function from the cstdlib header file used to convert a string value to an integer value.
-  
+
+7. \t is used to push text in a line back by 1 tab, used for alinement of text in the terminal.
+    
 > Day 2:
 
 1.Learn #include <>
