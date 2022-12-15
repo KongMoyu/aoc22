@@ -14,7 +14,7 @@ Let's start solving the AOC2022 shall we?
 
 1.Changing my VScode Code Runner's '.json' terminal to "cpp": "cd $dir && g++  -std=c++11 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
 
-2.Learn #include <vector> array:
+2.Learn #include <vector> array: !
 
   
 > Day 2:
