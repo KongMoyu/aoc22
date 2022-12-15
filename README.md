@@ -4,7 +4,7 @@ This is my file for the Advent Of Code {year => 2022}
 
 I feel very lucky participating in this event and learn with the pros and solve challenging coding questions.
 
-I saved most of my files on VScode and Atom.
+I saved most of my files on VScode.
 
 Let's start solving the AOC2022 shall we?
 
@@ -42,7 +42,7 @@ Let's start solving the AOC2022 shall we?
 6.#include <cstdlib> :The C++ <cstdlib> header file declares a set of general-purpose functions such as: atof() to convert string to double. It also contains a few mathematical functions. For example, abs() to find the absolute value of a number.
   - current += std::atoi(line.c_str()); // atoi is a predefined function from the cstdlib header file used to convert a string value to an integer value.
 
-7. \t is used to push text in a line back by 1 tab, used for alinement of text in the terminal.
+7. '\t' is used to push text in a line back by 1 tab, used for alinement of text in the terminal.
     
 > Day 2:
 
