@@ -53,6 +53,33 @@ cout<<"False";
 }
 //True
 
+2.char...: using '' for letter or number(max127) or \n;\t;\\
+
+3.#include <cctype>
+  - isalpha(v)
+  - islower(v)
+  - isdigit(v)
+  - tolower(v)
+ 
+4.&& stands for 'and', || stands for 'or'
+
+5.Better than if else statement:
+  - int x;
+    cin >> x; // 3
+    switch(x){
+      case 1;
+        cout<< ... << endl;
+      break;
+      case 2;
+        cout<< ... << endl;
+      break;
+      case 3; // out-put
+        cout<< ... << endl;
+      break;
+      default;
+        cout<< ... << endl;
+      break;
+
 > Day 3:
 
 1.
