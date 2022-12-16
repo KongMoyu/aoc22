@@ -6,7 +6,7 @@ I feel very lucky participating in this event and learn with the pros and solve 
 
 I saved most of my files on VScode with detail explainations comments.
 
-Let's start solving the AOC2022 shall we?
+I recommand reading this page with raw format.
 
 ###Lesson Learnt###
 
