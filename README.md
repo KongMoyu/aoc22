@@ -4,7 +4,7 @@ This is my file for the Advent Of Code {year => 2022}
 
 I feel very lucky participating in this event and learn with the pros and solve challenging coding questions.
 
-I saved most of my files on VScode.
+I saved most of my files on VScode with detail explainations comments.
 
 Let's start solving the AOC2022 shall we?
 
