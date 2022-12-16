@@ -46,8 +46,12 @@ Let's start solving the AOC2022 shall we?
     
 > Day 2:
 
-1.Learn #include <>
-
+1.if(1 == 2 || 4){
+cout<<"True";
+}else{
+cout<<"False";
+}
+//True
 
 > Day 3:
 
