@@ -82,7 +82,7 @@ cout<<"False";
 
 > Day 3:
 
-1.
+1.size_t: is unsigned integral datatype. It represents the size of any object in bytes and returned by sizeof operator. It is used for array indexing and counting. It can never be negative.
 
 
 > Day 4:
