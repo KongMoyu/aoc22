@@ -82,7 +82,11 @@ cout<<"False";
 
 > Day 3:
 
-1.size_t: is unsigned integral datatype. It represents the size of any object in bytes and returned by sizeof operator. It is used for array indexing and counting. It can never be negative.
+1.size_t: is unsigned integral datatype. It represents the size of any object in bytes and returned by sizeof operator. It is used for array **indexing** and counting. It can never be negative.
+
+2.line.substr(start, number): it “extracts” a string from within a string (a part)
+
+3.string.find(item), item can be "" or '',if not found, return -1, find first appearance: It will return the index of the first character of the substring we have to find within the string.
 
 
 > Day 4:
