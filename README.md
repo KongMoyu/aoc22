@@ -63,7 +63,7 @@ cout<<"False";
  
 4.&& stands for 'and', || stands for 'or'
 
-5.Better than if else statement:
+5.Better than if else statement:One restriction on this expression is that it must evaluate to an integral type (int, char, short, long, long long, or enum)
   - int x;
     cin >> x; // 3
     switch(x){
