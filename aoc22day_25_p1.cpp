@@ -55,7 +55,7 @@ int main() {
         }
     }
 
-    while (!digits.empty() && digits.back() == 0) {
+    while (digits.empty() && digits.back() == 0) {
         digits.pop_back();
     }
 
