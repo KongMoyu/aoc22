@@ -21,8 +21,8 @@ int main() {
         int group_1_left = stoi(group_1.substr(0, dash));
         int group_1_right = stoi(group_1.substr(dash + 1));
 
-        dash = group_2.find_first_of('-');
-        int group_2_left = stoi(group_2.substr(0, dash));
+        size_t dash2 = group_2.find_first_of('-');
+        int group_2_left = stoi(group_2.substr(0, dash2));
         int group_2_right = stoi(group_2.substr(dash + 1));
 
         if (
