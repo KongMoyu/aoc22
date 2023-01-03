@@ -34,18 +34,13 @@ int main() {
             }
         }
 
-        if (last_two.size() == 2) {
-            for (char item = 'A'; item <= 'z'; item += (item == 'Z' ? 7 : 1)) {
-                if (
-                    line.find(item) != string::npos &&
-                    last_two[1].find(item) != string::npos &&
-                    last_two[0].find(item) != string::npos
-                ) {
+        if (last_two.size() == 2){
+            for (char item : line) { 
+                if (line.find(item) != string::npos && last_two[1].find(item) != string::npos && last_two[0].find(item) != string::npos) {
                     priority_sum_part_2 += get_priority(item);
                     break;
                 }
             }
-
             last_two.clear();
         } else {
             last_two.push_back(line);
