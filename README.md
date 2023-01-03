@@ -91,13 +91,14 @@ cout<<"False";
 
 > Day 4:
 
-1.
+1.line.find_first_of(','): find the comma, str comma!
+
+2.line.substr(comma + 1): select the sub-string followed by the given character, comma
 
 
 > Day 5;
 
 1.
-
 
 > Day 6;
 
