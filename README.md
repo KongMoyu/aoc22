@@ -107,7 +107,25 @@ cout<<"False";
 
 > Day 5;
 
-1.
+1.enum：
+It is used to assign names to the integral constants which makes a program easy to read and maintain. The keyword “enum” is used to declare an enumeration. The following is the syntax of enums. enum enum_name{const1, const2, ....... };
+“There's a couple advantages to it, database size and performance — if you index integers you'll be better off than if you index strings.” Because enums are stored in databases as integers rather than as strings, developers also pointed out that they take up less space.
+
+2.Stacks are a type of container adaptors with LIFO(Last In First Out) type of working, where a new element is added at one end (top) and an element is removed from that end only. #include <stack>
+
+3.isdigit: In each iteration of the loop, we use the isdigit() function to check if the string element str[i] is a digit or not. The result is stored in the check variable. check = isdigit(str[i]); If check returns a non-zero value, we print the string element.
+
+4.vector<stack<char>> stacks_1: stacks_1[0],first stack. stacks_1[1],second stack.
+
+5.remove_if(): is a function that removes elements from a range that satisfy a certain condition. In this case, the function removes all elements that are alphabetical characters. The function is called with the following arguments:
+
+6.static_cast<int(*)(int)>(isalpha): A function that returns true if the character passed to it is an alphabetical character (upper or lower case) and false otherwise. The function isalpha is used to determine whether a character is alphabetical.(static_cast is used to convert the function pointer and used to ensure that the types match.)
+
+7.int parts[3];: Declares an array called 'parts' with 3 elements of type 'int'.
+
+8.The stream.good(): loop condition ensures that the loop continues as long as there are elements to be read from the 'stream' object.
+
+
 
 > Day 6;
 
