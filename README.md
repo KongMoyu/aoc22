@@ -129,7 +129,9 @@ It is used to assign names to the integral constants which makes a program easy 
 
 > Day 6;
 
-1.
+1.compare(const string& str, int start, int i = 4)->function: it means if you have a string str with the value "abcdefg" and you call compare(str, 2, 3), the function will compare the substring "cde" (the characters at index 2, 3, and 4 in the string) to some other value or criteria.
+
+2.const&: it specifies a reference, const& means that the reference is a read-only reference to an object. This can be useful when you want to pass an object to a function, but you don't want the function to modify the original object. e.g void printNumber(const int& number){}
 
 
 > Day 7;
