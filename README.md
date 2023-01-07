@@ -142,8 +142,63 @@ It is used to assign names to the integral constants which makes a program easy 
 
 > Day 7;
 
-1.
+1.register int x = 0;: this is used to tell the compiler to store a variable in a register instead of in memory. (can potentially make your program run faster, because it is faster to access variables in registers than it is to access them in memory.). However, the compiler may ignore your request and store the variable in memory if it determines that it is better to do so. The register keyword is not commonly used in modern C++ programming.
+  
+2.void justFunction(void);: This indicates that the function "printHello" does not take any arguments (just an example). An argument can be something like a (int num) for the function to work.
+  
+3.static int count = 10; or static int add(int a, int b) {return a+b;}: (1)To specify that a variable has static storage duration. This means that the variable is created at the beginning of the program and exists until the end of the program. It is like a global variable, but its visibility is limited to the file it is defined in.(2)To specify that a function or variable has internal linkage. This means that the function or variable is only visible within the file it is defined in and is not visible to other files.
 
+4.extern int variable;// In a header file ... int variable = 10;// In a source file: This declares a variable named "variable" with external linkage. The "extern" keyword specifies that the variable can be accessed from other translation units and the definition of "variable" in the source file specifies the storage location and value of the variable.
+  
+5.Directory *root = new Directory (Null,"/"); Directory *current_dir = root;: What these two lines mean is that the first line creates a root called 'Directory'(can be use as an object) and NULL indicate that it has no parent(alone). While the "/" string is the name of the root('Directory'). Then the second line means that any changes with current_dir will reflect on root, also, the current_dir object will point to the same new 'Directory'("/") also known as root, while fall under the same Directory TreeNode structure.
+  
+6.#include <sstream>  std::istringstream stream(line);: Firstly, istream means input stream that allows you to read data from a string object as if it were an input stream. So istringstream stream(line) is a class the has a constructor that takes a string as an argument(line). The string is used to initialize the input stream and the characters in the string can be read from the stream using the >> operator or other stream extraction functions.
+  why use istringstream sstream(*input*)?
+- When you have a string that contains multiple values and you want to extract those values one by one.
+- When you want to read formatted data from a string (e.g., integers, floating-point numbers, etc.).
+- When you want to read data from a string that is generated at runtime (e.g., from user input).
+- When you want to read data from a string that is stored in a file or received over a network connection.
+In the end, the 'stream' word will have the same value as 'line' which is in the bracket
+  
+Another important thing about istringstream is that, in C++, an istringstream object can be used to read data from a string as if it were an input stream. By default, istringstream treats white space (i.e., spaces, tabs, and newlines) as delimiters and reads data up to the next white space character. This means that, by default, istringstream will read words (i.e., sequences of non-white-space characters) from the input string.
+  
+But if you want characters also can; use char word; instead of std::string word;
+  
+7.A tree is a data structure that consists of nodes organized into a hierarchy. Each node in the tree has zero or more child nodes, and each child node has a parent node. The top node in the tree, which has no parent, is called the root node.
+
+A Directory object might be used to represent a directory in a file system, with the name field representing the name of the directory, the parent field pointing to the parent directory, and the child field pointing to a child directory.
+
+A TreeNode object might be used to represent a node in a tree data structure, with the val field representing the value stored at the node, the left field pointing to the left child node, and the right field pointing to the right child node.
+
+Both Directory and TreeNode objects can be used to represent nodes in a tree data structure, but they are not necessarily the same thing. The specific member fields and functionality of a Directory object or a TreeNode object will depend on how they are defined and used in a particular program.
+
+8.member function (under a struct definition): A member function is a function that is defined as part of a struct or class. It has access to the member fields of the struct or class and can be called on objects of the struct or class.
+  
+9.int get_smallest_sufficient_dir_size(int minimum) {
+    int size = get_size();
+
+    if (size < minimum) {
+        size = -1;
+    }
+
+    for (Directory *dir : dirs) {
+        int dir_size = dir->get_smallest_sufficient_dir_size(minimum);
+        if ((dir_size < size || size == -1) && dir_size != -1) {
+            size = dir_size;
+        }
+    }
+
+    return size;
+} // The get_smallest_sufficient_dir_size function returns the size of the smallest directory with size greater than or equal to a given minimum size.
+           
+- The function first calls the get_size function on itself to get the size of the current directory. If the size is less than the minimum size, it sets the size variable to -1.
+
+-Next, the function uses a ranged-based for loop to iterate over the child directories of the current directory. For each child directory, it calls the get_smallest_sufficient_dir_size function recursively to get the size of the smallest sufficient directory within that child directory.
+
+-If the size of the current child directory is smaller than the current value of the size variable, or if the size variable is -1 (indicating that no sufficient directory has been found yet), the size variable is updated to the size of the current child directory.
+
+-Finally, the function returns the value of the size variable, which will be the size of the smallest sufficient directory found within the current directory and its children.
+  
 
 > Day 8;
 
