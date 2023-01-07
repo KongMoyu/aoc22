@@ -198,6 +198,49 @@ Both Directory and TreeNode objects can be used to represent nodes in a tree dat
 -If the size of the current child directory is smaller than the current value of the size variable, or if the size variable is -1 (indicating that no sufficient directory has been found yet), the size variable is updated to the size of the current child directory.
 
 -Finally, the function returns the value of the size variable, which will be the size of the smallest sufficient directory found within the current directory and its children.
+
+Opposite:
+                            
+int get_largest_insufficient_dir_size(int minimum) {
+    int size = get_size();
+
+    if (size >= minimum) {
+        size = -1;
+    }
+
+    for (Directory *dir : dirs) {
+        int dir_size = dir->get_largest_insufficient_dir_size(minimum);
+        if (dir_size > size) {
+            size = dir_size;
+        }
+    }
+
+    return size;
+}        
+  
+In TreeNode: 
+                            
+int minimum_size = 500;
+TreeNode *root = create_tree();  // create the tree
+int smallest_sufficient_dir_size = get_smallest_sufficient_dir_size(root, minimum_size);
+                            
+int get_smallest_sufficient_dir_size(TreeNode *root, int minimum) {
+    int size = root->val;  // get the size of the current node
+
+    if (size < minimum) {
+        size = -1;
+    }
+
+    for (TreeNode *child : root->children) {  // iterate over the children of the current node
+        int child_size = get_smallest_sufficient_dir_size(child, minimum);  // recursively check the children
+        if ((child_size < size || size == -1) && child_size != -1) {
+            size = child_size;
+        }
+    }
+
+    return size;
+}                            
+                            
   
 
 > Day 8;
