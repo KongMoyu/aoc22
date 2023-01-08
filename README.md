@@ -245,7 +245,22 @@ int get_smallest_sufficient_dir_size(TreeNode *root, int minimum) {
 
 > Day 8;
 
-1.
+1.vector<vector<int>> map; This means that map is a two-dimensional vector (a vector of vectors) of integers.
+
+int main() {
+  vector<vector<int>> map = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+
+  for (int i = 0; i < map.size(); ++i) {
+    for (int j = 0; j < map[i].size(); ++j) {
+      cout << map[i][j] << " ";
+    }
+    cout << endl;
+  }
+
+  return 0;
+}
+
+2.size_t &axis = horizontal ? check_x : check_y; // axis is a reference to a variable that is set to check_x if horizontal is true, and check_y otherwise.
 
 
 > Day 9;
