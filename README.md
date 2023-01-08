@@ -260,7 +260,10 @@ int main() {
   return 0;
 }
 
-2.
+2.if (!visible_trees_increased && !blocked) {
+                    ++visible_trees;
+                    visible_trees_increased = true;
+                } // ensure that two false is agreed upon different occasions to ensure this only iterate once.
 
 3.size_t &axis = horizontal ? check_x : check_y;: Axis is a reference to a variable that is set to check_x if horizontal is true, and check_y otherwise. if you increase the value of axis, the value of check_x or check_y will also be increased, depending on the value of horizontal. 
 
