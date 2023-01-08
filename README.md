@@ -260,7 +260,18 @@ int main() {
   return 0;
 }
 
-2.size_t &axis = horizontal ? check_x : check_y; // axis is a reference to a variable that is set to check_x if horizontal is true, and check_y otherwise.
+2.
+
+3.size_t &axis = horizontal ? check_x : check_y;: Axis is a reference to a variable that is set to check_x if horizontal is true, and check_y otherwise. if you increase the value of axis, the value of check_x or check_y will also be increased, depending on the value of horizontal. 
+
+for (axis += sign; axis < size; axis += sign) {
+  // Loop body
+}
+
+As the loop iterates, the value of axis is incremented by sign (axis += sign). Since axis is a reference to either check_x or check_y, the value of check_x or check_y will also be incremented, depending on which one axis is a reference to.
+
+
+
 
 
 > Day 9;
