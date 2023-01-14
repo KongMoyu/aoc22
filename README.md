@@ -304,7 +304,11 @@ As the loop iterates, the value of axis is incremented by sign (axis += sign). S
   
 > Day 10;
 
-1.
+1.substr(0, 3): This method is used to extract the first three characters of the first_name.
+
+2.line.substr(5): this is a method used to extract a substring from the line variable, starting from the 5th character
+
+3.std::stod: this is a function used to convert a string to a double-precision floating-point number.(std::stoi is used for converting a string to an integer and std::stod is used for converting a string to a double-precision floating-point number)
 
 
 > Day 11;
