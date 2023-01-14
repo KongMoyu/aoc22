@@ -25,7 +25,8 @@ I recommand reading this page with raw format.
   - i < v.size();
   - for (int num : v ){} 
   
-3.for (string line; getline(file, line);){
+3.
+for (string line; getline(file, line);){
     if (line.empty()){
       ...
     }
@@ -34,7 +35,8 @@ I recommand reading this page with raw format.
     }
   }
   
-4.int key;
+4.
+int key;
   cout << "Enter ...: " << endl;
   cin >> key;
   
@@ -48,7 +50,8 @@ I recommand reading this page with raw format.
    
 > Day 2:
 
-1.if(1 == 2 || 4){
+1.
+if(1 == 2 || 4){
 cout<<"True";
 }else{
 cout<<"False";
@@ -66,21 +69,21 @@ cout<<"False";
 4.&& stands for 'and', || stands for 'or'
 
 5.Better than if else statement:One restriction on this expression is that it must evaluate to an integral type (int, char, short, long, long long, or enum)
-  - int x;
-    cin >> x; // 3
-    switch(x){
-      case 1;
-        cout<< ... << endl;
-      break;
-      case 2;
-        cout<< ... << endl;
-      break;
-      case 3; // out-put
-        cout<< ... << endl;
-      break;
-      default;
-        cout<< ... << endl;
-      break;
+int x;
+cin >> x; // 3
+switch(x){
+  case 1;
+    cout<< ... << endl;
+  break;
+  case 2;
+    cout<< ... << endl;
+  break;
+  case 3; // out-put
+    cout<< ... << endl;
+  break;
+  default;
+    cout<< ... << endl;
+  break;
 
 
 > Day 3:
@@ -98,7 +101,8 @@ cout<<"False";
 
 2.line.substr(comma + 1): select the sub-string followed by the given character, comma.
 
-3.#include <iostream>
+3.
+#include <iostream>
   using namespace std;
   int main() {
     int i = 0;
@@ -260,7 +264,8 @@ int main() {
   return 0;
 }
 
-2.if (!visible_trees_increased && !blocked) {
+2.
+if (!visible_trees_increased && !blocked) {
                     ++visible_trees;
                     visible_trees_increased = true;
                 } // ensure that two false is agreed upon different occasions to ensure this only iterate once.
@@ -292,13 +297,15 @@ As the loop iterates, the value of axis is incremented by sign (axis += sign). S
   
 4.std::set: it stores its elements in a sorted order, and the elements are unique. When you try to insert an element into the set that already exists, it will be ignored because a set only stores unique elements.
   
-5.if (std::abs(x_diff) == 2 || std::abs(y_diff) == 2) { // follow the parent 
+5.
+if (std::abs(x_diff) == 2 || std::abs(y_diff) == 2) { // follow the parent 
       knot.first += (x_diff > 0) ? 1 : ((x_diff < 0) ? -1 : 0); // if 2, +1. if -2, -1.
       knot.second += (y_diff > 0) ? 1 : ((y_diff < 0) ? -1 : 0); // if diff = 0, no move
   }
                                                      
-6.std::pair<int, int> &knot = knots[i]; // after parent
-  std::pair<int, int> &parent = knots[i - 1]; // before knot
+6.
+std::pair<int, int> &knot = knots[i]; // after parent
+std::pair<int, int> &parent = knots[i - 1]; // before knot
 
   
 > Day 10;
