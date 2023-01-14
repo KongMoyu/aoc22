@@ -43,7 +43,7 @@ int main() {
         }
 
         if (instruction == "addx") {
-            X += std::stod(line.substr(5));
+            X += std::stoi(line.substr(5));
         }
     }
 
