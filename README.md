@@ -279,9 +279,28 @@ As the loop iterates, the value of axis is incremented by sign (axis += sign). S
 
 > Day 9;
 
-1.
+1.std::pair<int, int>: This allows you to store two items of different types as a single unit. In this case, the two types being stored are int.
+  
+  std::pair<std::string, int> nameAge;
+  nameAge.first = "John";
+  nameAge.second = 25;
+  std::cout << "Name: " << nameAge.first << ", Age: " << nameAge.second << std::endl;
+  
+2.std::make_pair: This is a function that creates a new pair containing the two elements passed as arguments. 
+  
+3.std::set<std::pair<int, int>> tail_positions_part_1; This line of code creates an empty set of unique pairs of integers, where the elements will be stored in sorted order.
+  
+4.std::set: it stores its elements in a sorted order, and the elements are unique. When you try to insert an element into the set that already exists, it will be ignored because a set only stores unique elements.
+  
+5.if (std::abs(x_diff) == 2 || std::abs(y_diff) == 2) { // follow the parent 
+      knot.first += (x_diff > 0) ? 1 : ((x_diff < 0) ? -1 : 0); // if 2, +1. if -2, -1.
+      knot.second += (y_diff > 0) ? 1 : ((y_diff < 0) ? -1 : 0); // if diff = 0, no move
+  }
+                                                     
+6.std::pair<int, int> &knot = knots[i]; // after parent
+  std::pair<int, int> &parent = knots[i - 1]; // before knot
 
-
+  
 > Day 10;
 
 1.
