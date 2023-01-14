@@ -25,8 +25,7 @@ I recommand reading this page with raw format.
   - i < v.size();
   - for (int num : v ){} 
   
-3.
-for (string line; getline(file, line);){
+3.for (string line; getline(file, line);){
     if (line.empty()){
       ...
     }
@@ -35,10 +34,9 @@ for (string line; getline(file, line);){
     }
   }
   
-4.
-int key;
-  cout << "Enter ...: " << endl;
-  cin >> key;
+4.int key;
+    cout << "Enter ...: " << endl;
+    cin >> key;
   
 5.The basic_string::c_str() is a builtin function in C++ which returns a pointer to an array that contains a null-terminated sequence of characters representing the current value of the basic_string object.
   
@@ -50,8 +48,7 @@ int key;
    
 > Day 2:
 
-1.
-if(1 == 2 || 4){
+1.if(1 == 2 || 4){
 cout<<"True";
 }else{
 cout<<"False";
@@ -101,8 +98,7 @@ switch(x){
 
 2.line.substr(comma + 1): select the sub-string followed by the given character, comma.
 
-3.
-#include <iostream>
+3.#include <iostream>
   using namespace std;
   int main() {
     int i = 0;
@@ -297,16 +293,13 @@ As the loop iterates, the value of axis is incremented by sign (axis += sign). S
   
 4.std::set: it stores its elements in a sorted order, and the elements are unique. When you try to insert an element into the set that already exists, it will be ignored because a set only stores unique elements.
   
-5.
-` 
-if (std::abs(x_diff) == 2 || std::abs(y_diff) == 2) { // follow the parent 
+5.if (std::abs(x_diff) == 2 || std::abs(y_diff) == 2) { // follow the parent 
       knot.first += (x_diff > 0) ? 1 : ((x_diff < 0) ? -1 : 0); // if 2, +1. if -2, -1.
       knot.second += (y_diff > 0) ? 1 : ((y_diff < 0) ? -1 : 0); // if diff = 0, no move
   }
-`                                                     
-6.
-std::pair<int, int> &knot = knots[i]; // after parent
-std::pair<int, int> &parent = knots[i - 1]; // before knot
+                                                    
+6.std::pair<int, int> &knot = knots[i]; // after parent
+  std::pair<int, int> &parent = knots[i - 1]; // before knot
 
   
 > Day 10;
