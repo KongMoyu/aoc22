@@ -313,8 +313,28 @@ As the loop iterates, the value of axis is incremented by sign (axis += sign). S
 
 > Day 11;
 
-1.
+1.A Monkey object has a member operation of type Operation, which in turn has members op and value. To access them, you would use the dot notation, e.g. monkey_obj.operation.op or monkey_obj.operation.value.
 
+2.size_t and int are similar in that they are both data types used to store integers. However, size_t is an unsigned integer type specifically designed to represent the size of an object in memory and is guaranteed to be large enough to hold the size of the largest object in the system. On the other hand, int can be either signed or unsigned, depending on the implementation. It is typically used to represent a wider range of values, including negative numbers, than size_t.
+
+3.A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle. It works like a line at a grocery store, where the person who arrived first gets served first. This is the reason that it's called a queue.
+Visually, a queue can be represented as a series of items stacked one behind the other. New items are added to the back of the queue, and items are removed from the front of the queue.
+Queues are suitable for occasions where you want to process elements in the order they were added, such as in a breadth-first search algorithm or a printer spooler.
+
+4.size_t and int are similar in that they are both data types used to store integers. However, size_t is an unsigned integer type specifically designed to represent the size of an object in memory and is guaranteed to be large enough to hold the size of the largest object in the system. On the other hand, int can be either signed or unsigned, depending on the implementation. It is typically used to represent a wider range of values, including negative numbers, than size_t.
+
+5.A "signed" variable can store both positive and negative values. The first bit of the number is used to represent the sign of the number, either 0 for positive or 1 for negative. This means that half of the range of possible values for a signed integer is taken up by negative numbers.
+An "unsigned" variable can only store positive values, as all bits are used to represent the magnitude of the number, so it has a larger range of positive numbers than a signed integer of the same size.
+In general, if you know that your numbers will only be positive, using unsigned variables can be more efficient as they have a larger range of values and can take up less memory. However, if you need to store negative numbers, you should use signed variables.
+
+6.The long long at the start of the function definition long long monkey_business(... indicates that the function returns a long long type value. This means that when this function is called and executed, it will return a long long type value.
+
+7.In the code std::function<long long(long long)> modifier, the long long in the bracket (long long) represents the return type of the function modifier. The function modifier takes a single argument of type long long and returns a value of type long long.
+
+8.for (; !monkey.items.empty(); monkey.items.pop()){}
+The value before the first semi-colon (;) is usually an initialization step for the loop counter, but since the loop counter is not used in this case, it is omitted.
+
+9.
 
 > Day 12;
 
