@@ -61,9 +61,6 @@ long long monkey_business(
 
                 item = modifier(item);
 
-                size_t &target = (item % monkey.divisor == 0) ?
-                                 monkey.target_true : monkey.target_false;
-
                 if (item % monkey.divisor == 0) {
                     monkeys[monkey.target_true].items.push(item);
                 } else {
