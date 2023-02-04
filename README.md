@@ -358,7 +358,9 @@ The value before the first semi-colon (;) is usually an initialization step for 
 #include <complex>
 #include <chrono>
 
-13.
+13.The macro #define REP(i, n) for(int i = 0; i < n; i ++) is a shorthand for writing a loop in C++. It is called a macro because it is pre-processed by the compiler before the actual compilation of the code begins. (mainly replace)
+                                                    
+14.#ifdef and #endif are preprocessor directives in C/C++. They are used to conditionally include or exclude code based on the value of a macro. #ifdef checks if a macro is defined and if it is, the code between the #ifdef and the #endif is compiled.                                                    
 
 
 > Day 12;
