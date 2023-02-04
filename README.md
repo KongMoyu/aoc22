@@ -334,7 +334,32 @@ In general, if you know that your numbers will only be positive, using unsigned 
 8.for (; !monkey.items.empty(); monkey.items.pop()){}
 The value before the first semi-colon (;) is usually an initialization step for the loop counter, but since the loop counter is not used in this case, it is omitted.
 
-9.
+9.& is called the reference operator, which is used to create a reference to a variable.
+
+10.[](long long item) -> long long {return item / 3;}: This is an anonymous function in C++, also known as a "lambda function". The capture clause is used to specify the variables that should be available inside the lambda function which means that its value can be used and modified inside the lambda function. The purpose of the capture clause is to allow the lambda function to access variables defined in the surrounding scope and use them in its implementation. It takes in a single argument, item, which is a long long type. The lambda function then divides the value of item by 3, and returns the result as a long long type. In other words, this lambda function performs integer division of its input by 3 and returns the result.
+
+11.{return item % product;}: The modulus operator % is used to get the remainder of a division between two numbers. In this case, item % product means that the result is the remainder of dividing item by product.
+
+12.you are using Visual Studio, you can still use the features provided by bits/stdc++.h by including the equivalent standard library headers one by one. Here is a list of headers that are typically included in bits/stdc++.h:
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+#include <cstdlib>
+#include <algorithm>
+#include <cmath>
+#include <vector>
+#include <map>
+#include <set>
+#include <queue>
+#include <stack>
+#include <string>
+#include <bitset>
+#include <ctime>
+#include <complex>
+#include <chrono>
+
+13.
+
 
 > Day 12;
 
